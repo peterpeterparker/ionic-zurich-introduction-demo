@@ -1,0 +1,30 @@
+
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>park-details</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+  <ion-card>
+
+    <ion-card-header>
+      {{park?.properties.name}}
+    </ion-card-header>
+
+    <ion-card-content>
+      <p>{{park?.properties.infrastruktur}}</p>
+
+      <p *ngIf="park?.properties.www !== null">
+        <ion-icon name="link"></ion-icon>
+        <small>{{park?.properties.www}}</small>
+      </p>
+    </ion-card-content>
+
+  </ion-card>
+
+</ion-content>

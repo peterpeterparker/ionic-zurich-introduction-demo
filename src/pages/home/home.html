@@ -9,7 +9,7 @@
 
   <ion-list [virtualScroll]="parks">
 
-    <ion-item *virtualItem="let park">
+    <ion-item *virtualItem="let park" tappable (click)="navigate(park)">
       {{ park.properties.name }}
     </ion-item>
 

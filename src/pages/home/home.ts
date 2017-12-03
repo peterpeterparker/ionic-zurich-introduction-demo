@@ -23,4 +23,8 @@ export class HomePage {
     );
   }
 
+  navigate(park: Park) {
+    this.navCtrl.push('ParkDetailsPage', {park: park});
+  }
+
 }
