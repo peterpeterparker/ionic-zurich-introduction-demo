@@ -9,4 +9,4 @@ A simple demo app for the Ionic Zürich group
 * Lazy loading
 * Http requests
 * Navigation
-
+* PWA (https://ionic-zurich-pwa.firebaseapp.com)
