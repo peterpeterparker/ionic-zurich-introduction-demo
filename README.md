@@ -10,3 +10,23 @@ A simple demo app for the Ionic Zürich group
 * Http requests
 * Navigation
 * PWA (https://ionic-zurich-pwa.firebaseapp.com)
+
+### Debug and build
+
+Debug locally:
+
+```
+ionic serve
+```
+
+Build PWA:
+
+```
+npm run ionic:build --prod
+```
+
+Deploy to Firebase:
+
+```
+firebase deploy
+```
