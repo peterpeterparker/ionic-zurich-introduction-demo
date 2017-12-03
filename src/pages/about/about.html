@@ -8,4 +8,20 @@
 
 <ion-content padding>
 
+  <p>Test: {{'HELLO' | translate}}</p>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col col-4>
+        <button ion-button (click)="switch('en')">English</button>
+      </ion-col>
+      <ion-col col-4>
+        <button ion-button color="light" (click)="switch('de')">Deutsch</button>
+      </ion-col>
+      <ion-col col-4>
+        <button ion-button color="dark" (click)="switch('fr')">Français</button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
 </ion-content>
