@@ -2,5 +2,11 @@
   "name": "ionic-zurich-introduction-demo",
   "app_id": "",
   "type": "ionic-angular",
-  "integrations": {}
+  "integrations": {},
+  "proxies": [
+    {
+      "path": "/",
+      "proxyUrl": "https://data.stadt-zuerich.ch/"
+    }
+  ]
 }

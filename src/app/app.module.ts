@@ -12,6 +12,7 @@ import {HttpClient, HttpClientModule} from '@angular/common/http';
 import {TranslateModule, TranslateLoader} from '@ngx-translate/core';
 import {TranslateHttpLoader} from '@ngx-translate/http-loader';
 import { I18nSwitcherProvider } from '../providers/i18n-switcher/i18n-switcher';
+import { ParksProvider } from '../providers/parks/parks';
 
 export function createTranslateLoader(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -41,7 +42,8 @@ export function createTranslateLoader(http: HttpClient) {
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
-    I18nSwitcherProvider
+    I18nSwitcherProvider,
+    ParksProvider
   ]
 })
 export class AppModule {

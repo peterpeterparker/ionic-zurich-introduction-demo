@@ -6,7 +6,12 @@
 
 <ion-content padding>
   <h2>Welcome to Ionic!</h2>
-  <p>
-    {{'HELLO' | translate}}
-  </p>
+
+  <ion-list [virtualScroll]="parks">
+
+    <ion-item *virtualItem="let park">
+      {{ park.properties.name }}
+    </ion-item>
+
+  </ion-list>
 </ion-content>
