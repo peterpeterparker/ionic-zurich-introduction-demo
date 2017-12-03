@@ -28,10 +28,7 @@ export class ParksProvider {
   getList(): Observable<Object> {
     const params: HttpParams = new HttpParams();
 
-    // Local: 'http://localhost:8100/dataset/park/resource/570b4622-eb7a-4ad3-8b4f-028d30b6cb8c/download/park.json'
-    // Prod: 'https://data.stadt-zuerich.ch/dataset/park/resource/570b4622-eb7a-4ad3-8b4f-028d30b6cb8c/download/park.json'
-
-    return this.httpClient.get('https://data.stadt-zuerich.ch/dataset/park/resource/570b4622-eb7a-4ad3-8b4f-028d30b6cb8c/download/park.json', {params: params});
+    return this.httpClient.get('http://localhost:8100/dataset/park/resource/570b4622-eb7a-4ad3-8b4f-028d30b6cb8c/download/park.json', {params: params});
   }
 
 }
